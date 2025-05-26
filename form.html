@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto: Buscar Versículo Bíblico</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Buscar Versículo Bíblico</h1>
+      </header>
+      <main id="main">
+        <section class="hero">
+          <div class="hero-text">
+            <h2>🙏 Encontre a Palavra que você precisa !</h2>
+            <hr class="linha" />
+            <p class="hero-description">
+              Sinta-se à vontade para digitar uma palavra-chave, um tema (como
+              “amor”, “perdão”, “fé” ou “esperança”) ou até uma referência
+              bíblica (como João 3:16). O app fará a busca por você!
+            </p>
+            <p class="hero-description">
+              Busque agora e deixe-se tocar pela Palavra de Deus.
+            </p>
+          </div>
+          <div class="hero-galeria">
+            <figure><img src="/assets/img/img-01.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-02.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-03.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-04.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-05.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-06.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-07.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-08.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-10.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-11.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-12.jpg" alt="" /></figure>
+            <figure><img src="/assets/img/img-13.jpg" alt="" /></figure>
+          </div>
+        </section>
+
+        <section class="form">
+          <h2>Vamos procurar juntos?</h2>
+          <form action="" id="my-form" class="form-search">
+            <div class="form-group">
+              <label for="">Digite o Livro:</label>
+              <input type="text" id="livro" placeholder="Ex: João" required />
+
+              <label for="">Digite o Capítulo:</label>
+              <input
+                type="number"
+                id="capitulo"
+                placeholder="Ex: João 3"
+                required
+              />
+              <label for="">Digite o Versículo:</label>
+              <input
+                type="number"
+                id="versiculo"
+                placeholder="Ex: 16"
+                required
+              />
+              <div>
+                <button type="submit" id="botao" class="form-group-btn">
+                  buscar
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="form-resultado">
+          <div class="resultado">
+            <h3>Resultado:</h3>
+            <p id="result-text">Aqui aparecerá o resultado da busca.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Visionária-DEV- Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

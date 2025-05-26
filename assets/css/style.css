@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("https://plus.unsplash.com/premium_photo-1671557281546-8e54da79700a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(27, 18, 1, 0.349);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3);
+  overflow: visible;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333d29;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f0f02;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.hero-text {
+  padding: 6rem;
+}
+
+.hero-text h2 {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.linha {
+  width: 16rem;
+  margin-top: 1rem;
+  border-color: #936639;
+}
+
+.hero-description {
+  margin: 1rem 0;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+.hero-galeria {
+  max-width: 50%;
+  column-count: 4;
+}
+
+.hero-galeria > figure > img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: rgb(218 218 230 / 14%) 0px 8px 24px,
+    rgb(240 240 248 / 2%) 0px 16px 56px, rgb(87 39 0 / 28%) 0px 24px 80px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #aa7c5b24;
+}
+
+.form h2 {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.form-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #1f0f02;
+  border-radius: 0.6rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+input {
+  width: 15rem;
+  padding: 0.9rem;
+  border-radius: 0.4rem;
+  outline: none;
+  color: #251401 !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 500;
+  appearance: none !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  color: #f8f8f8;
+  opacity: 0.5;
+}
+
+.form-group-btn {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: #4b2003;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-group-btn:hover {
+  background-color: #ffffff75;
+  color: white;
+}
+
+.form-resultado {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: #1f0f02;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  max-height: 400px; /* limite de altura com rolagem */
+  overflow-y: auto;
+}
+
+.resultado h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 1rem;
+}
+
+#result-text {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #333d29;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  position: relative;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Telas até 1024px (ex: tablets em paisagem) */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero-galeria {
+    column-count: 5;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+/* Telas até 768px (ex: tablets em retrato) */
+@media (max-width: 768px) {
+  .hero-galeria {
+    column-count: 5;
+  }
+
+  .form-search {
+    padding: 1.5rem;
+  }
+
+  .form h2 {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .form-group {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .form-group-btn {
+    padding: 0.8rem;
+  }
+
+  .form-resultado {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Telas até 480px (ex: celulares) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .hero-galeria {
+    column-count: 4 !important;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+    flex-direction: column;
+  }
+
+  .linha {
+    width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-galeria {
+    column-count: 1;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+  }
+}
